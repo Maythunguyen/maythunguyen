@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/maythunguyen/static/css/main.49e6b307.css",
+    "main.js": "/maythunguyen/static/js/main.bcf2a97e.js",
+    "static/media/coffee.png": "/maythunguyen/static/media/coffee.cbbf16da251e4eee91c1.png",
+    "index.html": "/maythunguyen/index.html",
+    "main.49e6b307.css.map": "/maythunguyen/static/css/main.49e6b307.css.map",
+    "main.bcf2a97e.js.map": "/maythunguyen/static/js/main.bcf2a97e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.49e6b307.css",
+    "static/js/main.bcf2a97e.js"
+  ]
+}
