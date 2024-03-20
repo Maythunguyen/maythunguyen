@@ -8,6 +8,7 @@ const ProjectList = [
             "HTML", // Skills are now strings
             "CSS", 
             "Javascript",
+            "React", 
             "Python", 
             "API"
         
