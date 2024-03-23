@@ -10,19 +10,22 @@ function Navbar() {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen)
     }
+    const closeMenu = () => {
+        setIsMenuOpen(false)
+    }
     return(
         <div className="navbar">
             <div className="logo"><a href="#">MAY <span>THU NGUYEN</span></a></div>
             <div className={`nav-menu ${isMenuOpen ? "open" : ""}`}>
                 <ul className="links">
                     <li className="links-item">
-                        <Link to="about-me" spy={true} smooth={true} duration={500} className="button-28">ABOUT ME</Link>
+                        <Link to="about-me" spy={true} smooth={true} duration={500} className="button-28" onClick={closeMenu}>ABOUT ME</Link>
                     </li>
                     <li className="links-item">
-                        <Link to="projects-container" spy={true} smooth={true} duration={500} className="button-28">MY PROJECTS</Link>
+                        <Link to="projects-container" spy={true} smooth={true} duration={500} className="button-28" onClick={closeMenu}>MY PROJECTS</Link>
                     </li>
                     <li className="links-item">
-                        <Link to="contact-me" spy={true} smooth={true} duration={500} className="button-28">CONTACT ME</Link>
+                        <Link to="contact-me" spy={true} smooth={true} duration={500} className="button-28" onClick={closeMenu}>CONTACT ME</Link>
                     </li>
                 </ul>
 

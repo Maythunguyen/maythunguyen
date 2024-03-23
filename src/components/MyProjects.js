@@ -3,7 +3,6 @@ import ProjectList from "./List/ProjectList";
 import "../styles.css";
 import { MdArrowOutward } from "react-icons/md";
 import { GoDotFill } from "react-icons/go";
-import { Link } from "react-router-dom";
 
 function MyProjects() {
     return (
@@ -21,6 +20,7 @@ function MyProjects() {
             <div className="my-projects">
             {ProjectList.map(project => (
                 <div className="project-infor" key={project.id}>
+                <a href={project.projectLink} target="_blank" rel="noopener noreferrer" className="project-info" key={project.id}>
             
                     <img src={project.projectImg} alt={project.projectName}/>
                         <div className="project-skill">
@@ -37,6 +37,7 @@ function MyProjects() {
                     <div className="arrow-open">
                         <MdArrowOutward size={48}/> 
                     </div>
+                    </a>
                 </div>
 
 

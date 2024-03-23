@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import coffee from "../asset/coffee.png";
 import "../styles.css";
-import { FaGithub } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa6";
 import { LuArrowDownRight } from "react-icons/lu";
 import { HiArrowUpRight } from "react-icons/hi2";
 
