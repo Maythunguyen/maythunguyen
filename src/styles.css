@@ -948,8 +948,8 @@ span {
   }
   
   .panel-img img {
-    width: 80%;
-    height: 400px;
+    width: 85%;
+    height: 450px;
     object-fit: cover;
     transition: transform 0.5s ease;
   }
