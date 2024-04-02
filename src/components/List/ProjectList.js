@@ -12,7 +12,7 @@ const ProjectList = [
         ],
         projectDesc: "Seeking Nursing Home is a dynamic web application designed to bridge the gap between healthcare professionals and facilities. Utilizing cutting-edge technologies like Google Maps API and PHP backend with Bootstrap, the platform offers an intuitive experience for both job seekers and employers in the nursing home sector",
         projectImg: "https://www.careabout.com.au/wp-content/uploads/2024/02/my-aged-care-find-a-quality-home-care-package-provider-in-melbourne-sydney-brisbane-canberra-adelaide-australia-careabout-scaled.jpg",
-        projectLink: "https://big-hero-6-unihack24.github.io/stockpulse/"
+        projectLink: ""
     },
     {
         id: 2,
