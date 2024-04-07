@@ -537,8 +537,8 @@ span {
   
   .project-infor img {
     transition: transform 0.3s ease-in-out;
-    max-width: 100%;
-    min-height: 60vh;
+    width: 100%;
+    height: 60vh;
     display: block; /* Ensure img takes up the whole container width */
     object-fit: cover;
     border-radius: 30px;
@@ -920,13 +920,13 @@ span {
 }
 
 .panel-img {
-  min-width: 80%;
+  min-width: 90%;
   margin: auto;
 }
 
 .panel-img img {
   min-width: 70%;
-  max-height: 30rem;
+  max-height: 40rem;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -985,6 +985,423 @@ span {
     font-size: 4rem;
   }
 
+
+  
+}
+
+/* iPhone 13 Mini */
+@media (max-width: 303px) {
+    html {
+      font-size: 14px;
+    }
+  
+    .navbar {
+      width: 90%;
+    
+    }
+
+    .logo a {
+      font-size: 1.5rem;
+    }
+    .nav-menu {
+      display: none;
+          flex-direction: column;
+          width: 100%;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: #f0f0f0;
+          transition: right 0.8s cubic-bezier(1, 0, 0, 1);
+          height: 100vh;
+          align-items: center;
+  
+    }
+    .nav-menu.open {
+      display: flex;
+  
+    }
+  
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+    }
+    .bar {
+      width: 2.7rem;
+      background-color: #010101;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      min-height: 300px;
+    }
+  
+    .links-item {
+      text-align: center;
+      padding: 15px;
+  }
+  
+  
+  .bar-1.change {
+    transform: rotateZ(-45deg) translate(-5px, 6px);
+  }
+  
+  .bar-2.change {
+    transform: rotateZ(45deg) translate(-5px, -6px);
+  }
+
+  html {
+    font-size: 14px;
+  }
+  .about-me {
+    min-width: 90%;
+    margin: auto;
+    display: flex;
+    padding-bottom: 2rem;
+    align-items: center;
+}
+
+.intro-myself {
+    min-width: 85%;
+    margin:0 auto 4rem;
+    color: #010101;
+    line-height: 25.6px;
+    font-size: 1rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+
+.title h1 {
+    color: #010101;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.myself-content {
+    width: 100%;
+}
+
+.content-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+
+
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+.my-skill h2 {
+      margin-left: 7.5%;
+      font-size: 2rem;
+      font-weight: 400;
+  
+    }
+    .my-skill h2:hover {
+      color:#e76350;
+    }
+  
+    .skills-container {
+      position: relative;
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    
+    .skills-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 7.5%; /* Adjust this value to control the starting point of the border */
+      right: 7.5%; /* Adjust this value to control the end point of the border */
+      bottom: 0;
+      border-top: 2px solid #010101;
+      border-bottom: 2px solid #010101;
+    }
+    
+    .skill {
+      display: flex;
+      align-items: center; /* Align text vertically inside the skill */
+      justify-content: center; /* Center the text horizontally */
+      min-width: 8rem;
+      margin-right: 1rem;
+      animation: scrollLeft 10s linear infinite;
+    }
+    @keyframes scrollLeft {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+    
+  
+  
+    .skill p {
+      font-size: 1.7rem;
+    }
+    /* Infinite scroll animation */
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(100);
+      }
+      100% {
+        transform: translateX(-100%); /* Move only half of the total width */
+      }
+    }
+  
+    
+    .paused {
+      animation-play-state: paused;
+    }
+.projects-container {
+    width: 90%;
+    margin: 12.5rem auto;
+  }
+
+  .projects-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature {
+    display: flex;
+    justify-content: center;
+  }
+
+  .projects-title h1 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  .project-dot {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: flex-start;
+
+  }
+.my-projects {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Creates 3 columns */
+    grid-gap: 2rem; /* Adjust the gap between grid items */
+    margin: auto;
+    width: 100%;
+
+}
+  .project-infor {
+    position: relative;
+    max-width: 100%; /* Adjust based on your design */
+    margin-bottom: 1.25rem; /* Space between project cards */
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  
+  .project-infor img {
+    transition: transform 0.3s ease-in-out;
+    max-width: 90%;
+    min-height: 50vh;
+    display: block; /* Ensure img takes up the whole container width */
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  .project-infor img:hover {
+    transform: scale(1.1); /* Scale up the image */
+    border-radius: 30px;
+  }
+  
+  .project-skill {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
+    color: #fff;
+    text-transform: uppercase;
+    font-weight:300 ;
+    padding: 5px 10px;
+  }
+
+  .project-title {
+    position: absolute;
+    color: #fff;
+    padding: 0.25rem 0.7rem;
+  }
+
+  .project-title h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+  .arrow-open {
+    position: absolute;
+    bottom: 1.5rem; /* Adjust as needed */
+    right: 1.5rem; /* Adjust as needed */
+    font-size: 1.5rem; /* Adjust icon size as needed */
+    color: #fff; /* Icon color */
+    display: none; /* Hide by default */
+    cursor: pointer;
+  }
+  .project-infor:hover .arrow-open {
+    display: block; /* Show the arrow icon on hover */
+  }
+  .arrow-open:hover {
+    transform: scale(1.1);
+    color:#000;
+    border-radius: 5px;
+
+  }
+  
+  .project-skill {
+    max-width: 80%;
+    top: 0.625rem; /* Adjust as needed */
+    left: 0.625rem; /* Adjust as needed */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    border-radius: 40px;
+  }
+  
+  .skill-item {
+   
+    color: #fff;
+    padding: 0.3rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+  }
+  
+  .project-title {
+    bottom: 0.625rem; /* Adjust as needed */
+    left: 0.625rem; /* Adjust as needed */
+  }
+  
+  /* Optional: Adding a hover effect to project cards */
+  .project-infor:hover .project-skill, 
+  .project-infor:hover {
+    background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+  }
+.contact-container {
+    max-width: 85%;
+    margin: 9.5rem auto 0;
+  }
+  
+  .section-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-title h1 {
+    font-size: 3rem;
+  }
+
+  .email { 
+    margin-top: 2rem;
+  }
+  
+  .email h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: underline;
+    cursor: pointer;
+    cursor: pointer;
+  
+  }
+  
+  .email p {
+    color: #e76350;
+  }
+  
+  .foot {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4rem;
+  }
+  .social-title h3 {
+    font-weight: 500;
+    color: #e76350;
+  }
+  .social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-top: 2px solid #010101;
+    border-bottom: 2px solid #010101;
+    
+  }
+  .social a {
+    text-decoration: none;
+    color: #010101;
+    font-size: 1rem;
+  
+  }
+  .social-channels {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  
+  .git, .linkedin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+  .git a, .linkedin a {
+    font-size: 1.5rem;
+  }
+.container-panel {
+
+    min-width: 85%;
+      margin: 6.9rem auto 0;
+      padding-bottom: 32px;
+      padding-top: 11rem;
+  
+  }
+  
+  .panel-img {
+    min-width: 100%;
+    margin: auto;
+  }
+  
+  .panel-img img {
+    max-width: 100%;
+    min-height: 26rem;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .panel-title {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .panel-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .panel-title h1 {
+    font-size: 3.5rem;
+  }
 
   
 }
