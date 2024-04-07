@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
     font-family: 'Prompt', sans-serif;
     background-color:#f0f0f0 ;
@@ -86,7 +90,7 @@ body {
 
 
 .navbar {
-  width: 85%;
+  min-width: 85%;
   background-color: #f0f0f0;
   border-bottom: 1px solid #bfbaba;
   padding: 40px 0 32px; /* Combined top and bottom padding */
@@ -104,7 +108,7 @@ body {
     display: flex;
     align-items: center;
     justify-content:space-between ;
-    gap: 32px;
+    gap: 2rem;
     
 }
 
@@ -119,7 +123,7 @@ body {
 .logo a {
     text-decoration: none;
     color: #010101;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
    
     
@@ -146,7 +150,7 @@ span {
 
 .bar {
     display: block;
-    width: 25px;
+    width: 2rem;
     height: 3px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
@@ -155,6 +159,10 @@ span {
 }
 
 @media (max-width: 768px) {
+
+  html {
+    font-size: 14px;
+  }
 
   .navbar {
     width: 90%;
@@ -183,7 +191,7 @@ span {
     flex-direction: column;
   }
   .bar {
-    width: 50px;
+    width: 3.125rem;
     background-color: #010101;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -192,8 +200,8 @@ span {
   .links {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    height: 300px;
+    gap: 2rem;
+    min-height: 300px;
   }
 
   .links-item {
@@ -220,10 +228,10 @@ span {
   /*INTRO MYSELF*/
 
 .about-me {
-    width: 85%;
+    min-width: 85%;
     margin: auto;
     display: flex;
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
     align-items: center;
 }
 
@@ -232,16 +240,16 @@ span {
     margin:130px auto;
     color: #010101;
     line-height: 25.6px;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: justify;
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 3rem;
 }
 
 .title h1 {
     color: #010101;
-    font-size: 64px;
+    font-size: 4rem;
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -253,13 +261,13 @@ span {
 .content-icons {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .icons {
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 2rem;
 }
 
 
@@ -280,29 +288,34 @@ span {
 
 
 @media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
   .about-me {
-    width: 90%;
+    min-width: 90%;
     margin: auto;
     display: flex;
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
     align-items: center;
 }
 
 .intro-myself {
-    width: 85%;
-    margin:0 auto 64px;
+    min-width: 85%;
+    margin:0 auto 4rem;
     color: #010101;
     line-height: 25.6px;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: justify;
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 3rem;
 }
+
+
 
 .title h1 {
     color: #010101;
-    font-size: 48px;
+    font-size: 3rem;
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -317,27 +330,6 @@ span {
     gap: 24px;
 }
 
-.icons {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-}
-
-
-.icons a {
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    position:relative;
-}
-
-.icons a:hover {
-    color: white;
-    background: #e76350;
-    padding: 8px 12px;
-    border-radius: 50px;
-
-}
 
 
 
@@ -351,7 +343,7 @@ span {
 
   .my-skill h2 {
     margin-left: 7.5%;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 400;
 
   }
@@ -361,7 +353,7 @@ span {
 
   .skills-container {
     position: relative;
-    padding: 24px 0;
+    padding: 1.5rem 0;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -384,8 +376,8 @@ span {
     display: flex;
     align-items: center; /* Align text vertically inside the skill */
     justify-content: center; /* Center the text horizontally */
-    min-width: 200px;
-    margin-right: 40px;
+    min-width: 12.5rem;
+    margin-right: 2.5rem;
     animation: scrollLeft 10s linear infinite;
   }
   @keyframes scrollLeft {
@@ -400,7 +392,7 @@ span {
 
 
   .skill p {
-    font-size: 48px;
+    font-size: 3rem;
   }
   
   /* Infinite scroll animation */
@@ -416,7 +408,7 @@ span {
 
 
   .skill p {
-    font-size: 48px;
+    font-size: 3rem;
   }
   
   .paused {
@@ -424,14 +416,13 @@ span {
   }
 
   @media (max-width:768px) {
-    .my-skill {
-      width: 90%;
-      margin: auto;
+
+    html {
+      font-size: 14px;
     }
-  
     .my-skill h2 {
-      margin-left: 0%;
-      font-size: 24px;
+      margin-left: 7.5%;
+      font-size: 2rem;
       font-weight: 400;
   
     }
@@ -441,7 +432,7 @@ span {
   
     .skills-container {
       position: relative;
-      padding: 24px 0;
+      padding: 1.5rem 0;
       display: flex;
       align-items: center;
       overflow: hidden;
@@ -453,8 +444,8 @@ span {
       content: '';
       position: absolute;
       top: 0;
-      left: 0%; /* Adjust this value to control the starting point of the border */
-      right: 0%; /* Adjust this value to control the end point of the border */
+      left: 7.5%; /* Adjust this value to control the starting point of the border */
+      right: 7.5%; /* Adjust this value to control the end point of the border */
       bottom: 0;
       border-top: 2px solid #010101;
       border-bottom: 2px solid #010101;
@@ -464,8 +455,8 @@ span {
       display: flex;
       align-items: center; /* Align text vertically inside the skill */
       justify-content: center; /* Center the text horizontally */
-      min-width: 200px;
-      margin-right: 0px;
+      min-width: 10rem;
+      margin-right: 1rem;
       animation: scrollLeft 10s linear infinite;
     }
     @keyframes scrollLeft {
@@ -480,9 +471,8 @@ span {
   
   
     .skill p {
-      font-size: 32px;
+      font-size: 2rem;
     }
-    
     /* Infinite scroll animation */
     @keyframes scrollLeft {
       0% {
@@ -504,7 +494,7 @@ span {
   /* PROJECTS */
   .projects-container {
     width: 85%;
-    margin: 200px auto;
+    margin: 12.5rem auto;
   }
 
   .projects-title {
@@ -518,37 +508,37 @@ span {
   }
 
   .projects-title h1 {
-    font-size: 100px;
+    font-size: 6.25rem;
     font-weight: 600;
   }
 
   .project-dot {
     display: flex;
     flex-direction: row;
-    gap: 64px;
+    gap: 4rem;
     justify-content: flex-start;
 
   }
 .my-projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Creates 3 columns */
-    grid-gap: 32px; /* Adjust the gap between grid items */
+    grid-gap: 2rem; /* Adjust the gap between grid items */
     margin: auto;
     width: 100%;
 
 }
   .project-infor {
     position: relative;
-    width: 100%; /* Adjust based on your design */
-    margin-bottom: 20px; /* Space between project cards */
+    max-width: 100%; /* Adjust based on your design */
+    margin-bottom: 1.25rem; /* Space between project cards */
     overflow: hidden;
     border-radius: 30px;
   }
   
   .project-infor img {
     transition: transform 0.3s ease-in-out;
-    width: 100%;
-    height: 60vh;
+    max-width: 100%;
+    min-height: 60vh;
     display: block; /* Ensure img takes up the whole container width */
     object-fit: cover;
     border-radius: 30px;
@@ -574,14 +564,14 @@ span {
   }
 
   .project-title h2 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 400;
   }
   .arrow-open {
     position: absolute;
     bottom: 20px; /* Adjust as needed */
     right: 20px; /* Adjust as needed */
-    font-size: 24px; /* Adjust icon size as needed */
+    font-size: 1.5rem; /* Adjust icon size as needed */
     color: #fff; /* Icon color */
     display: none; /* Hide by default */
     cursor: pointer;
@@ -597,8 +587,8 @@ span {
   }
   
   .project-skill {
-    top: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
+    top: 0.625rem; /* Adjust as needed */
+    left: 0.625rem; /* Adjust as needed */
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -613,8 +603,8 @@ span {
   }
   
   .project-title {
-    bottom: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
+    bottom: 0.625rem; /* Adjust as needed */
+    left: 0.625rem; /* Adjust as needed */
   }
   
   /* Optional: Adding a hover effect to project cards */
@@ -626,54 +616,73 @@ span {
 
 @media (max-width: 768px) {
 
-  .projects-container {
-    width: 90%;
-    margin: 100px auto;
+  html {
+    font-size: 14px;
   }
 
- .projects-title h1 {
+  .projects-container {
+    min-width: 90%;
+    margin: 12.5rem auto;
+  }
 
-  font-size: 80px;
+  .projects-title {
+    display: flex;
+    flex-direction: column;
+  }
 
-  
- }
+  .feature {
+    display: flex;
+    justify-content: center;
+  }
+
+  .projects-title h1 {
+    font-size: 5rem;
+    font-weight: 600;
+  }
+
+  .project-dot {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: flex-start;
+
+  }
 .my-projects {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); 
-    grid-gap: 24px; 
+  grid-template-columns: repeat(1, 1fr); /* Creates 3 columns */
+    grid-gap: 2rem; /* Adjust the gap between grid items */
     margin: auto;
     width: 100%;
 
 }
   .project-infor {
     position: relative;
-    width: 100%; /* Adjust based on your design */
-    margin-bottom: 20px; /* Space between project cards */
+    max-width: 100%; /* Adjust based on your design */
+    margin-bottom: 1.25rem; /* Space between project cards */
     overflow: hidden;
     border-radius: 30px;
   }
   
   .project-infor img {
     transition: transform 0.3s ease-in-out;
-    width: 100%;
-    height: 55vh;
-    display: block;
+    max-width: 100%;
+    min-height: 50vh;
+    display: block; /* Ensure img takes up the whole container width */
     object-fit: cover;
     border-radius: 30px;
   }
   .project-infor img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1); /* Scale up the image */
     border-radius: 30px;
   }
   
   .project-skill {
     position: absolute;
-    background: rgba(0, 0, 0, 0.2); 
+    background: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
     color: #fff;
     text-transform: uppercase;
-    font-weight:300;
+    font-weight:300 ;
     padding: 5px 10px;
-    font-size: 16px;
   }
 
   .project-title {
@@ -683,14 +692,14 @@ span {
   }
 
   .project-title h2 {
-    font-size: 32px;
+    font-size: 2.5rem;
     font-weight: 400;
   }
   .arrow-open {
     position: absolute;
-    bottom: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
-    font-size: 24px; /* Adjust icon size as needed */
+    bottom: 1.5rem; /* Adjust as needed */
+    right: 1.5rem; /* Adjust as needed */
+    font-size: 1.5rem; /* Adjust icon size as needed */
     color: #fff; /* Icon color */
     display: none; /* Hide by default */
     cursor: pointer;
@@ -706,8 +715,9 @@ span {
   }
   
   .project-skill {
-    top: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
+    max-width: 80%;
+    top: 0.625rem; /* Adjust as needed */
+    left: 0.625rem; /* Adjust as needed */
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -715,15 +725,15 @@ span {
   }
   
   .skill-item {
-    font-size: 16px;
+   
     color: #fff;
     padding: 2px 5px;
     border-radius: 3px;
   }
   
   .project-title {
-    bottom: 10px; /* Adjust as needed */
-    left: 10px; /* Adjust as needed */
+    bottom: 0.625rem; /* Adjust as needed */
+    left: 0.625rem; /* Adjust as needed */
   }
   
   /* Optional: Adding a hover effect to project cards */
@@ -731,7 +741,6 @@ span {
   .project-infor:hover {
     background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
   }
-  
 
   
 }
@@ -743,13 +752,13 @@ span {
 
 .contact-container {
   width: 85%;
-  margin: 150px auto 0;
+  margin: 9.5rem auto 0;
 }
 
 .section-title {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.75rem;
 }
 .right {
   display: flex;
@@ -757,11 +766,11 @@ span {
   justify-content: space-between;
 }
 .section-title h1 {
-  font-size: 150px;
+  font-size: 9.3rem;
 }
 
 .email h3 {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 400;
   text-decoration: underline;
   cursor: pointer;
@@ -774,7 +783,7 @@ span {
 }
 
 .foot {
-  margin-top: 64px;
+  margin-top: 4rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -787,7 +796,7 @@ span {
 .social {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
   
 }
 .social a {
@@ -798,31 +807,35 @@ span {
 .social-channels {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .git, .linkedin {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
 }
 .git a, .linkedin a {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 
 @media (max-width: 768px) {
 
+  html {
+    font-size: 14px;
+  }
+
   .contact-container {
-    width: 90%;
-    margin: 100px auto 0;
+    max-width: 85%;
+    margin: 9.5rem auto 0;
   }
   
   .section-title {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 1rem;
   }
   .right {
     display: flex;
@@ -830,15 +843,15 @@ span {
     justify-content: space-between;
   }
   .section-title h1 {
-    font-size: 80px;
+    font-size: 4rem;
   }
 
   .email { 
-    margin-top: 32px;
+    margin-top: 2rem;
   }
   
   .email h3 {
-    font-size: 32px;
+    font-size: 1.5rem;
     font-weight: 400;
     text-decoration: underline;
     cursor: pointer;
@@ -851,10 +864,10 @@ span {
   }
   
   .foot {
-    margin-top: 64px;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column-reverse;
-    gap: 64px;
+    gap: 4rem;
   }
   .social-title h3 {
     font-weight: 500;
@@ -864,9 +877,9 @@ span {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    gap: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     border-top: 2px solid #010101;
     border-bottom: 2px solid #010101;
     
@@ -879,17 +892,17 @@ span {
   .social-channels {
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 1.5rem;
   }
   
   .git, .linkedin {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 12px;
+    gap: 1rem;
   }
   .git a, .linkedin a {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   
   
@@ -900,20 +913,20 @@ span {
 .container-panel {
 
   width: 90%;
-    margin: 64px auto 0;
+    margin: 4rem auto 0;
     padding-bottom: 32px;
-    padding-top: 100px;
+    padding-top: 6.25rem;
 
 }
 
 .panel-img {
-  width: 80%;
+  min-width: 80%;
   margin: auto;
 }
 
 .panel-img img {
-  width: 70%;
-  height: 480px;
+  min-width: 70%;
+  max-height: 30rem;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -933,23 +946,27 @@ span {
 }
 @media (max-width: 768px) {
 
+  html {
+    font-size: 14px;
+  }
+
   .container-panel {
 
-    width: 85%;
-      margin: 96px auto 0;
+    min-width: 85%;
+      margin: 6.9rem auto 0;
       padding-bottom: 32px;
-      padding-top: 150px;
+      padding-top: 11rem;
   
   }
   
   .panel-img {
-    width: 85%;
+    min-width: 100%;
     margin: auto;
   }
   
   .panel-img img {
-    width: 85%;
-    height: 450px;
+    max-width: 100%;
+    min-height: 32rem;
     object-fit: cover;
     transition: transform 0.5s ease;
   }
@@ -965,9 +982,10 @@ span {
     justify-content: space-between;
   }
   .panel-title h1 {
-    font-size: 80px;
+    font-size: 4rem;
   }
 
 
   
 }
+
