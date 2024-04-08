@@ -10,6 +10,7 @@ html {
   font-size: 16px;
 }
 
+
 body {
     font-family: 'Prompt', sans-serif;
     background-color:#f0f0f0 ;
@@ -93,7 +94,7 @@ body {
   min-width: 85%;
   background-color: #f0f0f0;
   border-bottom: 1px solid #bfbaba;
-  padding: 40px 0 32px; /* Combined top and bottom padding */
+  padding: 2.5rem 0 2rem; /* Combined top and bottom padding */
   position: fixed;
   z-index: 1000;
   top: 0; /* Align it to the top */
@@ -249,7 +250,7 @@ span {
 
 .title h1 {
     color: #010101;
-    font-size: 4rem;
+    font-size: clamp(1.5rem, 5vw, 3rem);
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -311,14 +312,10 @@ span {
     gap: 3rem;
 }
 
-
-
 .title h1 {
-    color: #010101;
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 400;
+  font-size: 2rem;
 }
+
 
 .myself-content {
     width: 100%;
@@ -914,19 +911,19 @@ span {
 
   width: 90%;
     margin: 4rem auto 0;
-    padding-bottom: 32px;
+    padding-bottom: 2rem;
     padding-top: 6.25rem;
 
 }
 
 .panel-img {
-  min-width: 90%;
+  width: 70%;
   margin: auto;
 }
 
 .panel-img img {
-  min-width: 70%;
-  max-height: 40rem;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
@@ -942,7 +939,7 @@ span {
   justify-content: space-between;
 }
 .panel-title h1 {
-  font-size: 140px;
+  font-size: 8rem;
 }
 @media (max-width: 768px) {
 
@@ -990,7 +987,7 @@ span {
 }
 
 /* iPhone 13 Mini */
-@media (max-width: 303px) {
+@media (max-width: 375px) {
     html {
       font-size: 14px;
     }
@@ -1080,7 +1077,7 @@ span {
 
 .title h1 {
     color: #010101;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -1184,7 +1181,7 @@ span {
   }
 
   .projects-title h1 {
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: 600;
   }
 
@@ -1240,7 +1237,7 @@ span {
   }
 
   .project-title h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
   .arrow-open {
