@@ -38,14 +38,14 @@ function ContactMe() {
                 {showToolTip && <div className="tooltip" style={{
                     position: 'absolute',
                     bottom: '100%',
-                    left: '20%',
+                    left: '33%',
                     transform: 'translateX(-50%)',
                     backgroundColor: '#000',
                     color: 'white',
-                    padding: '8px 16px',
+                    padding: '0.5rem 1rem',
                     borderRadius: '4px',
                     zIndex: 1,
-                    fontSize: '14px',
+                    fontSize: '0.875rem',
                     }}>Can't wait to hear from you!</div>}
             </div>
             <div className="foot">
