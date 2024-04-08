@@ -674,6 +674,7 @@ span {
   }
   
   .project-skill {
+    max-width: 80%;
     position: absolute;
     background: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
     color: #fff;
@@ -683,6 +684,7 @@ span {
   }
 
   .project-title {
+    max-width: 80%;
     position: absolute;
     color: #fff;
     padding: 5px 10px;
@@ -951,7 +953,7 @@ span {
 
     min-width: 85%;
       margin: 6.9rem auto 0;
-      padding-bottom: 32px;
+      padding-bottom: 2rem;
       padding-top: 11rem;
   
   }
@@ -1233,6 +1235,7 @@ span {
   .project-title {
     position: absolute;
     color: #fff;
+    max-width: 70%;
     padding: 0.25rem 0.7rem;
   }
 
